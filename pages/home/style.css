@@ -1,0 +1,119 @@
+header {
+  padding: 1.5625rem 10%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary-100);
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navList li a {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.3125rem 0.75rem;
+  border: 2px solid var(--color-primary-100);
+  border-radius: 1.5625rem;
+  transition: all 0.3s ease-in-out;
+}
+.navList li a:hover,
+.navList li a.active {
+  box-shadow: 0 0 1rem var(--color-primary-100);
+  background-color: var(--color-primary-100);
+  color: var(--color-second-300);
+}
+
+section {
+  min-height: 100vh;
+}
+
+.parallax-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+.parallax-home img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.parallax-home #sub-title {
+  position: absolute;
+  font-size: 2.5rem;
+  text-shadow: 0 10px 4px rgba(0, 0, 0, 0.85);
+  top: 84%;
+  left: 3%;
+}
+.parallax-home img#moon {
+    mix-blend-mode: screen;
+}
+
+
+.about {
+    position: relative;
+}
+
+.about .infor-box {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 50%;
+    z-index: 11;
+    background-color: var(--color-second-300);
+}
+.about .infor-box h2 {
+    font-size: 2.5rem;
+}
+.about .infor-box p {
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+.btn {
+    background-color: var(--color-primary-100);
+    color: var(--color-second-300);
+    font-weight: 500;
+    border: 2px solid var(--color-primary-100);
+    border-radius: 1.5625rem;
+    padding: .5rem 1rem;
+    transition: all .3s ease-in-out;
+}
+.btn:hover {
+    box-shadow: 0 0 1rem var(--color-primary-100);
+    background-color: var(--color-second-300);
+    color: var(--color-primary-100);
+}
+
+.about img {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.about img.about-waterfall {
+    position: absolute;
+    top: -45px;
+}
+
+@media (min-width: 1536px) {
+    .about img.about-waterfall {
+        top: -58px;
+    }
+}
