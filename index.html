@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/globalStyle.css">
+    <link rel="stylesheet" href="./pages/home/style.css">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <nav>
+            <ul class="navList">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-home">
+            <img src="./Images/Home-Images/sky.png" alt="backgroud image" id="sky">
+            <img src="./Images/Home-Images/moon.png" alt="moon image" id="moon">
+            <img src="./Images/Home-Images/water.png" alt="water image" id="water">
+            <img src="./Images/Home-Images/center-city.png" alt="center city image" id="center-city">
+            <img src="./Images/Home-Images/right-city.png" alt="right city image" id="right-city">
+            <img src="./Images/Home-Images/left-city.png" alt="left city image" id="left-city">
+            <img src="./Images/Home-Images/train.png" alt="train image" id="train">
+            <img src="./Images/Home-Images/rail.png" alt="rail image" id="rail">
+            <h2 id="sub-title">Parallax Website</h2>
+            <img src="./Images/Home-Images/hill-left-1.png" alt="hill left image" id="hill-left">
+            <img src="./Images/Home-Images/hill-right-1.png" alt="hill right image" id="hill-right">
+        </section>
+        <section class="about" id="about">
+            <div class="infor-box">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, asperiores fugiat alias adipisci maxime sunt unde. Iste dolorem nihil laborum quaerat, id repudiandae, reiciendis eos et ullam omnis dolor quasi.
+                </p>
+                <a href="#" class="btn"> Read More!</a>
+            </div>
+
+            <img src="./Images//About-Images/waterfall.png" alt="waterfall image" id="waterfall" class="about-waterfall"/>
+            <img src="./Images/About-Images/desert-sky.png" alt=" image" id="">
+            <img src="./Images/About-Images/desert-moon.png" alt=" image" id="desert-moon">
+            <img src="./Images/About-Images/desert-NoSky.png" alt=" image" id="">
+            <img src="./Images/About-Images/desert-rock.png" alt=" image" id="">
+            <img src="./Images/About-Images/water.png" alt=" image" id="">
+            <img src="./Images/About-Images/man.png" alt=" image" id="man">
+            <img src="./Images/About-Images/grass.png" alt=" image" id="">
+
+            <div id="progress">
+                <span id="progress-value">
+                    <i class='bx bx-chevron-up'></i>
+                </span>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <h2>Our Products</h2>
+            <div class="product-card">
+                <div class="card">
+                    <img src="./Images/products/Salmon.png" alt="salmon image">
+                    <div class="info">
+                        <div class="price-name">
+                            <h3>Salmon</h3>
+                            <span>$120</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="" class="btn">Go Shop</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/products/Tuna.png" alt="salmon image">
+                    <div class="info">
+                        <div class="price-name">
+                            <h3>Tuna</h3>
+                            <span>$120</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="" class="btn">Go Shop</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/products/Swordfish.png" alt="salmon image">
+                    <div class="info">
+                        <div class="price-name">
+                            <h3>Swordfish</h3>
+                            <span>$120</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="" class="btn">Go Shop</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/products/Snapper.png" alt="salmon image">
+                    <div class="info">
+                        <div class="price-name">
+                            <h3>Snapper</h3>
+                            <span>$120</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="" class="btn">Go Shop</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./pages/home/script.js"></script>
+</body>
+</html>

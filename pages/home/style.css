@@ -1,0 +1,225 @@
+header {
+  padding: 1.5625rem 10%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary-100);
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navList li a {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: .3125rem .75rem;
+  border: 2px solid var(--color-primary-100);
+  border-radius: 1.5625rem;
+  transition: all 0.3s ease-in-out;
+}
+.navList li a:hover,
+.navList li a.active {
+  box-shadow: 0 0 1rem var(--color-primary-100);
+  background-color: var(--color-primary-100);
+  color: var(--color-second-300);
+}
+
+section {
+  min-height: 100vh;
+}
+
+.parallax-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+.parallax-home img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.parallax-home #sub-title {
+  position: absolute;
+  font-size: 2.5rem;
+  text-shadow: 0 10px 4px rgba(0, 0, 0, 0.85);
+  top: 84%;
+  left: 3%;
+}
+.parallax-home img#moon, .about #desert-moon {
+    mix-blend-mode: screen;
+}
+
+
+.about {
+    position: relative;
+}
+
+.about .infor-box {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 50%;
+    z-index: 11;
+    background-color: var(--color-second-300);
+}
+.about .infor-box h2 {
+    font-size: 2.5rem;
+}
+.about .infor-box p {
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+.btn {
+    background-color: var(--color-primary-100);
+    color: var(--color-second-300);
+    font-weight: 500;
+    border: 2px solid var(--color-primary-100);
+    border-radius: 1.5625rem;
+    padding: .5rem 1rem;
+    transition: all .3s ease-in-out;
+}
+.btn:hover {
+    box-shadow: 0 0 1rem var(--color-primary-100);
+    background-color: var(--color-second-300);
+    color: var(--color-primary-100);
+}
+
+.about img {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.about img.about-waterfall {
+    position: absolute;
+    top: -45px;
+}
+
+@media (min-width: 1536px) {
+    .about img.about-waterfall {
+        top: -58px;
+    }
+}
+
+
+.products {
+    background-color: var(--color-primary-400);
+    padding: 5rem 10%;
+    margin-top: 100px;
+}
+
+@media (min-width: 1536px) {
+    .products {
+        margin-top: 0;
+        padding-top: 150px;
+    }
+}
+
+.products h2 {
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    border: 2px solid var(--color-primary-100);
+    border-radius: 1.5625rem;
+    text-align: center;
+    display: block;
+    transition: all .4s ease-in-out;
+    z-index: 8;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-top: -4rem;
+    filter: drop-shadow(0 0 .5rem #1797ff);
+}
+
+.card .price-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    padding-bottom: .5rem;
+}
+
+.info p {
+    padding: .5rem 0 1.5rem 0;
+}
+
+.info btn {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.price-name span {
+    color: var(--color-money);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#progress {
+    position: fixed;
+    /* background-color: var(--color-primary-100); */
+    box-shadow: 0 0 1rem var(--color-primary-100);
+    z-index: 9;
+    bottom: 3.75rem;
+    right: .625rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    display: none;
+    place-items: center;
+    color: var(--color-second-300);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+#progress:hover {
+    transform: scale(1.1);
+}
+
+#progress-value {
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    background-color: var(--color-primary-100);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.875rem;
+}
