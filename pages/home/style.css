@@ -24,7 +24,7 @@ header {
 .navList li a {
   font-weight: 500;
   font-size: 1rem;
-  padding: 0.3125rem 0.75rem;
+  padding: .3125rem .75rem;
   border: 2px solid var(--color-primary-100);
   border-radius: 1.5625rem;
   transition: all 0.3s ease-in-out;
@@ -60,7 +60,7 @@ section {
   top: 84%;
   left: 3%;
 }
-.parallax-home img#moon {
+.parallax-home img#moon, .about #desert-moon {
     mix-blend-mode: screen;
 }
 
@@ -116,4 +116,110 @@ section {
     .about img.about-waterfall {
         top: -58px;
     }
+}
+
+
+.products {
+    background-color: var(--color-primary-400);
+    padding: 5rem 10%;
+    margin-top: 100px;
+}
+
+@media (min-width: 1536px) {
+    .products {
+        margin-top: 0;
+        padding-top: 150px;
+    }
+}
+
+.products h2 {
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    border: 2px solid var(--color-primary-100);
+    border-radius: 1.5625rem;
+    text-align: center;
+    display: block;
+    transition: all .4s ease-in-out;
+    z-index: 8;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-top: -4rem;
+    filter: drop-shadow(0 0 .5rem #1797ff);
+}
+
+.card .price-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    padding-bottom: .5rem;
+}
+
+.info p {
+    padding: .5rem 0 1.5rem 0;
+}
+
+.info btn {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.price-name span {
+    color: var(--color-money);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#progress {
+    position: fixed;
+    /* background-color: var(--color-primary-100); */
+    box-shadow: 0 0 1rem var(--color-primary-100);
+    z-index: 9;
+    bottom: 3.75rem;
+    right: .625rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    display: none;
+    place-items: center;
+    color: var(--color-second-300);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+#progress:hover {
+    transform: scale(1.1);
+}
+
+#progress-value {
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    background-color: var(--color-primary-100);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.875rem;
 }
